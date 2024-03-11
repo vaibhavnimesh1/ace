@@ -1,0 +1,661 @@
+:root {
+  --button-color: #14795a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.offcanvas.offcanvas-start {
+  /* width: 80%!important; */
+  background: rgb(20, 20, 20);
+  position: absolute !important;
+  /* left: 10px; */
+  position: fixed !important;
+}
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  /* padding: 2rem; */
+  text-align: center;
+}
+
+body {
+  width: 100%;
+
+  padding: 0;
+  background: black;
+}
+/* .offcanvas-start{
+  position: absolute;
+  z-index: 9999999;
+} */
+
+.navbar {
+  z-index: 1;
+  background-image: url("https://acepunt.in/bgwallet.jpg");
+  height: 530px;
+  margin-top: 20px;
+  width: 100%;
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+.top-bar {
+  position: absolute;
+  top: 0;
+}
+.common-li {
+  margin-top: 20px;
+  padding-left: 20px;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  color: white;
+  font-size: 20px;
+}
+
+.navbar-brand {
+  font-size: 35px;
+  /* background: white; */
+  padding: 0;
+}
+.navbar-brand-a {
+  color: #14795a;
+  background: white;
+  border-radius: 50%;
+  padding: 5px 7px;
+  font-size: 1.125rem;
+  margin: 0;
+}
+
+.house{
+  padding: 4px;
+}
+button {
+  padding: 2px 12px;
+  outline: none;
+  border: none;
+  /* height: 45px; */
+  border-radius: 4px;
+  font-weight: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-weight: 600;
+}
+
+.head-btn {
+  display: flex;
+}
+
+.demo {
+  background: #14795a;
+  color: white;
+  border: 1px solid #ffffff;
+  font-weight: normal;
+  overflow: hidden;
+}
+
+.login {
+  background: white;
+  color: black;
+  border: 2px solid #ffffff;
+  font-weight: normal;
+
+  overflow: hidden;
+}
+
+.wallet {
+  font-weight: normal;
+  /* background: red; */
+  margin: 0 auto;
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+
+.card-body:hover {
+  background: rgb(31, 30, 30);
+  border-radius: 10px;
+}
+.card-body {
+  padding: 5px 3px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.wallet .left,
+.wallet .right {
+  background: rgb(20, 20, 20);
+  height: 180px;
+  padding: 7px;
+  max-width: 150px;
+  width: 100%;
+  /* box-shadow: 1px 1px 20px 2px black; */
+}
+
+.middle h3 {
+  color: #14795a;
+}
+
+.wallet .left {
+  border-radius: 25px 0 0 25px;
+}
+
+.wallet .right {
+  border-radius: 0 25px 25px 0;
+}
+
+.icon {
+  font-size: 55px;
+  display: inline;
+}
+
+.middle h4 {
+  font-size: 1rem;
+}
+.middle {
+  background: rgb(20, 20, 20);
+  /* background: #f0f0f0; */
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.25rem;
+  width: 100%;
+  width: 230px;
+  padding: 30px 0;
+  border-radius: 25px;
+  box-shadow: 1px 1px 20px 2px black;
+}
+.main-logo {
+  width: 100px;
+}
+.main-logo img {
+  width: 100px;
+  /* z-index: 9999; */
+}
+
+.middle-wall {
+  background: rgb(20, 20, 20);
+  top: -46px;
+  height: 300px;
+  width: 200px;
+  left: 108px;
+  border-radius: 10px;
+  padding: 10px 0;
+  box-shadow: 1px 1px 20px 2px black;
+}
+
+.logo h3 {
+  display: flex;
+  float: left;
+  color: #14795a;
+  font-size: 2.5rem;
+}
+.logo h5 {
+  display: flex;
+  float: left;
+}
+.logo h6 {
+  display: flex;
+
+  margin-top: 10px;
+  float: left;
+  /* border-bottom: 1px solid white; */
+}
+.logo .line {
+  /* background: red; */
+  width: 50%;
+  opacity: 0.8;
+  border: 1px solid white;
+  margin-bottom: 10px;
+}
+.logo h5 {
+  font-size: 12px;
+}
+
+.logo img {
+  width: 120px;
+}
+
+/* swiper */
+
+#app {
+  height: 100%;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  /* width: 30px; */
+}
+
+.swiper-slide {
+  text-align: center;
+  height: 300px;
+  font-size: 18px;
+  background: black;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  object-fit: cover;
+  border-radius: 35px;
+}
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 20px;
+}
+
+/* swiper */
+
+.banner-box {
+  position: relative;
+  background: #000;
+  z-index: 998;
+  /* left: 20px; */
+  top: -100px;
+  border-radius: 45px 45px 0 0;
+  overflow: hidden;
+}
+
+.banner {
+  position: absolute;
+}
+
+/* footer
+ */
+
+.footer {
+  position: absolute;
+
+  background: rgb(20, 20, 20);
+  position: fixed;
+
+  z-index: 999;
+  position: sticky;
+  bottom: 0px;
+  /* height: 80px; */
+  /* padding: 20px 5px; */
+  margin: auto;
+  border-radius: 10px 10px 0 0 ;
+}
+
+.blend-image {
+  mix-blend-mode: multiply; /* Adjust blend mode as needed */
+}
+.footer-item {
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 20px;
+  color: grey;
+  padding: 13px;
+  width: 92px;
+  transition: ease-in-out 0.5s;
+}
+
+/* footer
+   */
+
+/* offcanvas */
+.upper-offcanvas {
+  background: rgb(35, 35, 35);
+}
+
+.offcanvas-icon {
+  right: -17px;
+  top: 88%;
+  background: #14795a;
+  border-radius: 10px 0 0 10px;
+  font-weight: 900;
+  height: 1.25rem;
+  font-size: 20px;
+  width: 10px;
+  padding: 20px 7px;
+}
+.offcanvas-icon-logout {
+  right: 13px;
+  font-size: 27px;
+  top: 35px;
+}
+
+.offcanvas-icon {
+  font-size: 10px !important;
+}
+.list-box {
+  display: flex;
+  flex-direction: column;
+  /* background: red; */
+  height: 100%;
+  height: 660px;
+  justify-content: space-between !important;
+}
+.app-btn {
+  background: rgb(35, 35, 35);
+  border: 2px solid #14795a;
+  color: #ffffff;
+  padding: 8px 12px;
+  border-radius: 7px;
+}
+.logout-btn {
+  color: #ffffff;
+  background: #14795a;
+  padding: 8px 12px;
+  border-radius: 7px;
+}
+
+.left h5,.right h5{
+  font-weight: 900;
+  font-size: 22px;
+}
+
+/* offcanvas */
+
+@media screen and (max-width: 425px) {
+  .head-btn {
+    gap: 0.625rem;
+  }
+  .navbar {
+    height: 460px;
+  }
+
+  .right {
+    margin-right: 8px;
+  }
+
+  .left {
+    margin-left: 8px;
+  }
+  .linee {
+    /* Font & Text */
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    text-decoration: none solid rgb(255, 255, 255);
+    text-align: left;
+    word-spacing: 0px;
+
+    /* Color & Background */
+    background-color: #ffffff;
+    background-image: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0),
+      rgb(255, 255, 255)
+    );
+    background-position: 0px 50%;
+    background-repeat: no-repeat;
+    color: #ffffff;
+
+    /* Box */
+    height: 1px;
+    width: 230px;
+    border: 0px inset #ffffff;
+    margin: 10px 0 10px 0;
+
+    /* Positioning */
+    display: block;
+
+    /* Miscellaneous */
+    overflow: hidden;
+
+    /* Effects */
+    transform: none;
+    transition: all 0s ease 0s;
+    outline: 1px dashed rgb(255, 0, 0);
+
+    /* Word Wrap */
+    word-wrap: break-word;
+    width: 50%;
+  }
+
+  .card-title {
+    font-size: 18px;
+    /* background: red; */
+  }
+  .icon {
+    font-size: 35px;
+  }
+  .middle {
+    height: 230px;
+    padding: 0;
+    width: 190px;
+    justify-content: center;
+  }
+  .wallet h5 {
+    font-size: 13px;
+  }
+
+  .middle-wall {
+    background: rgb(20, 20, 20);
+    top: 183px;
+    height: 168px;
+    width: 200px;
+    left: 0;
+    border-radius: 10px;
+    padding: 10px 0;
+    box-shadow: 1px 1px 20px 2px white;
+  }
+  */ .navbar {
+    margin-top: 10px;
+    z-index: 100;
+  }
+  .offcanvas,
+  .offcanvas-start,
+  .offcanvas.offcanvas-start {
+  
+    z-index: 99999;
+    position: fixed;
+  }
+  
+  .top-bar {
+    padding: 0 5px;
+    gap: 0;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+
+  .footer-item {
+    padding: 0;
+    font-size: 16px;
+    padding-top: 10px;
+  }
+  .wallet .left,
+  .wallet .right {
+    background: rgb(20, 20, 20);
+    height: auto;
+    padding: 7px 0;
+    max-width: 88px;
+    display: contents;
+    width: 100%;
+  }
+
+  .middle h3 {
+    gap: 0.625rem;
+  }
+  .main-logo img {
+    width: 66px;
+    /* z-index: 9999; */
+  }
+  .banner-box {
+    position: relative;
+    background: #000;
+    z-index: 998;
+    /* left: 20px; */
+    top: -100px;
+    border-radius: 25px 25px 0 0;
+    overflow: hidden;
+  }
+
+  button {
+    padding: 2px 4px;
+    outline: none;
+    border: none;
+    /* height: 37px; */
+    font-size: 14px;
+    border-radius: 8px;
+    line-height: 31px;
+    font-weight: 10px;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* text-align: center; */
+    font-weight: 500;
+  }
+
+  .wallet .left,
+  .wallet .right {
+    background: rgb(20, 20, 20);
+    height: 140px;
+    padding: 20px 0;
+    max-width: 100px;
+    width: 100%;
+  }
+
+  button {
+    font-size: 12px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+
+  .swiper-slide img {
+   
+    border-radius: 25px;
+  }
+
+
+ 
+
+
+  .Whatsapp {
+    right: 6px!important;
+    bottom: 110px!important;}}
+
+.modal {
+  top: 298px;
+  /* background: red; */
+  height: 556px;
+}
+
+.modal-content {
+  background: rgb(35, 35, 35);
+  width: 95%;
+  margin: auto;
+}
+.modal-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-title button {
+  background: #14795a;
+  color: black;
+}
+
+.imagess {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+}
+.imagess img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.modal-input {
+  height: 48px;
+  padding: 0 12px;
+  font-size: 1rem;
+  border-color: grey;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding-left: 50px;
+  outline: none;
+}
+
+.mob span {
+  position: absolute;
+  width: 30px;
+  top: 40px;
+}
+
+.mob span img {
+  width: 100%;
+}
+
+@media (max-width: 768px) and (min-width: 426px) {
+  .offcanvas.offcanvas-start {
+    left: 23px !important;
+  }
+}
+@media (max-width: 1024px) and (min-width: 769px) {
+  .offcanvas.offcanvas-start {
+    left: 30px !important;
+  }
+}
+
+.Whatsapp {
+  right: 26px;
+  bottom: 130px;
+  z-index: 100;
+  width: 43px;
+  cursor: pointer;
+  position: fixed !important;
+}
+
+@media screen and (max-width: 375px) {
+  .wallet .left,
+  .wallet .right {
+    background: rgb(20, 20, 20);
+    height: 140px;
+    padding: 20px 0;
+    max-width: 88px;
+    width: 100%;
+  }
+  .wallet .right {
+    border-radius: 0 18px 18px 0;
+}
+  .wallet .left {
+    border-radius: 18px 0  0 18px ;
+}
+}
+@media screen and (max-width: 320px) {
+  .wallet .left,
+  .wallet .right {
+    /* min-height: 6.5rem; */
+    max-width: 76px;
+  }
+
+  .wallet {
+    padding: 0 4px;
+
+  }
+}
+
+
+/* height: 230px; */
+/* padding: 0; */
+/* width: 200px; */
+/* justify-content: center; */
